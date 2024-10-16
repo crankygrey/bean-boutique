@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link rel="icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/3b49096c20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custom-bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="images/logo.png" alt="" width="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+                    <div class="mx-auto">
+                        <ul class="navbar-nav my-2 my-lg-0 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Our Blends
+                                </a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="#">Signature Blends</a></li>
+                                    <li><a class="dropdown-item" href="#">Limited Edition</a></li>
+                                </ul>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Brewing Gear</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">My Cart</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Events & Workshops</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Offers & Subscriptions</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Find Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="find-us-section m-5 text-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/find_us.jpg" class="img-fluid" alt="Shop Interior">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="find-us-content">
+                            <h1>Find Us</h1>
+                            <h4>Where</h4>
+                            <p>123 Coffee Lane,<br>Bean City, BC 12345</p>
+                            <h4>When</h4>
+                            <p>Mon - Fri: 8 AM - 6 PM<br>Sat - Sun: 9 AM - 5 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="map" class="container mb-4"></div>
+        </section>
+    </main>
+    <footer class="d-flex flex-wrap bg-dark justify-content-between align-items-center border-top p-4">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="text-muted">© 2024 Bean Boutique</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="m-2"><a class="text-muted" href="https://x.com/"><i class="fab fa-x-twitter fa-lg"></i></a></li>
+            <li class="m-2"><a class="text-muted" href="https://www.facebook.com/"><i
+                        class="fab fa-facebook-f fa-lg"></i></a></li>
+            <li class="m-2"><a class="text-muted" href="https://www.instagram.com/"><i
+                        class="fab fa-instagram fa-lg"></i></a></li>
+        </ul>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.min.js"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>
