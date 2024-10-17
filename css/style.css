@@ -131,12 +131,12 @@ body {
     margin: 15px 0;
 }
 
-.bestseller-section .card-img-top {
+.card-img-top {
     height: 200px;
     object-fit: contain;
 }
 
-.buy-now-btn {
+.add-to-cart-btn {
     background-color: #ffffff;
     border: 2px solid #422800;
     border-radius: 30px;
@@ -155,11 +155,11 @@ body {
     touch-action: manipulation;
 }
 
-.buy-now-btn:hover {
+.add-to-cart-btn:hover {
     background-color: #fff6eb;
 }
 
-.buy-now-btn:active {
+.add-to-cart-btn:active {
     box-shadow: #422800 2px 2px 0 0;
     transform: translate(2px, 2px);
 }
@@ -207,8 +207,70 @@ body {
     filter: grayscale(70%);
 }
 
+.signature-blends-hero, .limited-edition-hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.signature-blends-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+        url('../images/limited_blends.jpg') no-repeat center center/cover;
+}
+
+.limited-edition-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+        url('../images/coffee_blends.jpg') no-repeat center center/cover;
+}
+
+.blend-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-container {
+    position: relative;
+}
+
+.hover-info {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blend-card:hover .hover-info {
+    opacity: 1;
+}
+
+.todays-recipe-section .ingredients,
+.todays-recipe-section .instructions {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.recipe-image {
+    width: clamp(300px, 100%, 500px);
+    height: auto;
+    margin: auto;
+}
+
+.signature-blends-hero .lead, .limited-edition-hero .lead {
+    font-weight: bold;
+}
+
 @media (min-width: 768px) {
-    .buy-now-btn {
+    .add-to-cart-btn {
         min-width: 120px;
         padding: 0 25px;
     }
@@ -248,7 +310,7 @@ body {
         margin: 40px auto;
     }
 
-    .bestseller-section .card-img-top {
+    .card-img-top {
         height: 350px;
     }
 }

@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bean Boutique</title>
     <link rel="icon" href="images/favicon.ico">
-    <script src="https://kit.fontawesome.com/3b49096c20.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/custom-bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/custom-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -34,13 +34,13 @@
                                     Our Blends
                                 </a>
                                 <ul class="dropdown-menu text-center">
-                                    <li><a class="dropdown-item" href="#">Signature Blends</a></li>
-                                    <li><a class="dropdown-item" href="#">Limited Edition</a></li>
+                                    <li><a class="dropdown-item" href="/signature.html">Signature Blends</a></li>
+                                    <li><a class="dropdown-item" href="/limited_edition.html">Limited Edition</a></li>
                                 </ul>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Brewing Gear</a>
+                                <a class="nav-link" href="/brewing_gear.html">Brewing Gear</a>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
@@ -65,7 +65,7 @@
         </nav>
     </header>
     <main>
-        <section class="find-us-section m-5 text-black">
+        <section class="find-us-section m-5 text-black" data-aos="fade-up">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -83,7 +83,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section data-aos="fade-down">
             <div id="map" class="container mb-4"></div>
         </section>
     </main>
@@ -99,9 +99,11 @@
                         class="fab fa-instagram fa-lg"></i></a></li>
         </ul>
     </footer>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/map.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 
 </html>

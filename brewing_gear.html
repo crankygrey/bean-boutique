@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/custom-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="images/logo.png" alt="" width="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+                    <div class="mx-auto">
+                        <ul class="navbar-nav my-2 my-lg-0 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Our Blends
+                                </a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="/signature.html">Signature Blends</a></li>
+                                    <li><a class="dropdown-item" href="#">Limited Edition</a></li>
+                                </ul>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Brewing Gear</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">My Cart</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Events & Workshops</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Offers & Subscriptions</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/find_us.html">Find Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="limited-edition-hero text-center py-5" data-aos="fade-down">
+            <div class="container">
+                <h1 class="display-4 text-white">Exclusive, Limited Edition Blends</h1>
+                <p class="lead">Rare, Unique, and Crafted for Coffee Aficionados</p>
+            </div>
+        </section>
+        <section class="product-list-section my-5" data-aos="fade-up">
+            <div class="container">
+                <div id="product-list">
+                    <div class="input-group input-group-lg mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Search</span>
+                        <input type="text" class="form-control search" aria-label="Search for products"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="row list">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100 blend-card">
+                                <div class="card-img-container">
+                                    <img src="images/single_origin_ethiopian.png" class="card-img-top"
+                                        alt="Single Origin Ethiopian" />
+                                    <div class="hover-info">
+                                        <p><strong>Tasting Notes:</strong> Bright acidity with floral notes and hints of
+                                            berry.</p>
+                                        <p><strong>Brewing Method:</strong> Chemex or pour-over.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title dark-gold-text name">Single Origin Ethiopian</h5>
+                                    <p class="card-text text-black description">
+                                        A limited-release single-origin coffee from the highlands of Ethiopia, providing
+                                        vibrant and complex flavors with every sip.
+                                    </p>
+                                    <p class="price dark-gold-text">$19.99</p>
+                                    <a href="#" class="add-to-cart-btn">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100 blend-card">
+                                <div class="card-img-container">
+                                    <img src="images/harvest_moon_blend.png" class="card-img-top"
+                                        alt="Harvest Moon Blend" />
+                                    <div class="hover-info">
+                                        <p><strong>Tasting Notes:</strong> Roasted nuts, dried fruits, with a touch of
+                                            spice.</p>
+                                        <p><strong>Brewing Method:</strong> French press or stovetop espresso.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title dark-gold-text name">Harvest Moon Blend</h5>
+                                    <p class="card-text text-black description">
+                                        A rich and bold blend inspired by the autumn harvest, delivering an earthy,
+                                        full-bodied flavor perfect for chilly evenings.
+                                    </p>
+                                    <p class="price dark-gold-text">$21.99</p>
+                                    <a href="#" class="add-to-cart-btn">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100 blend-card">
+                                <div class="card-img-container">
+                                    <img src="images/winter_spice_blend.png" class="card-img-top"
+                                        alt="Winter Spice Blend" />
+                                    <div class="hover-info">
+                                        <p><strong>Tasting Notes:</strong> Cinnamon, clove, and nutmeg with a smooth
+                                            finish.</p>
+                                        <p><strong>Brewing Method:</strong> Drip brew or pour-over.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title dark-gold-text name">Winter Spice Blend</h5>
+                                    <p class="card-text text-black description">
+                                        A cozy blend infused with warm winter spices, perfect for savoring while curled
+                                        up by the fire on a snowy day.
+                                    </p>
+                                    <p class="price dark-gold-text">$23.99</p>
+                                    <a href="#" class="add-to-cart-btn">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100 blend-card">
+                                <div class="card-img-container">
+                                    <img src="images/summer_breeze_blend.png" class="card-img-top"
+                                        alt="Summer Breeze Blend" />
+                                    <div class="hover-info">
+                                        <p><strong>Tasting Notes:</strong> Citrus, floral, and a hint of honey.</p>
+                                        <p><strong>Brewing Method:</strong> Cold brew or AeroPress.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title dark-gold-text name">Summer Breeze Blend</h5>
+                                    <p class="card-text text-black description">
+                                        A light, refreshing blend designed for the summer season, ideal for cold brews
+                                        or iced coffee on hot sunny days.
+                                    </p>
+                                    <p class="price dark-gold-text">$20.99</p>
+                                    <a href="#" class="add-to-cart-btn">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100 blend-card">
+                                <div class="card-img-container">
+                                    <img src="images/solstice_reserve.png" class="card-img-top"
+                                        alt="Solstice Reserve" />
+                                    <div class="hover-info">
+                                        <p><strong>Tasting Notes:</strong> Tropical fruits, berries, and chocolate.</p>
+                                        <p><strong>Brewing Method:</strong> Chemex or siphon brew.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title dark-gold-text name">Solstice Reserve</h5>
+                                    <p class="card-text text-black description">
+                                        A limited release created to celebrate the summer solstice, featuring rare and
+                                        exotic beans for a unique taste.
+                                    </p>
+                                    <p class="price dark-gold-text">$24.99</p>
+                                    <a href="#" class="add-to-cart-btn">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100 blend-card">
+                                <div class="card-img-container">
+                                    <img src="images/midnight_roast.png" class="card-img-top" alt="Midnight Roast" />
+                                    <div class="hover-info">
+                                        <p><strong>Tasting Notes:</strong> Dark chocolate, roasted almonds, and a smoky
+                                            finish.</p>
+                                        <p><strong>Brewing Method:</strong> Espresso or moka pot.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title dark-gold-text name">Midnight Roast</h5>
+                                    <p class="card-text text-black description">
+                                        A deep, dark roast with bold flavors, perfect for those who enjoy an intense,
+                                        robust coffee experience every time.
+                                    </p>
+                                    <p class="price dark-gold-text">$22.99</p>
+                                    <a href="#" class="add-to-cart-btn">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="todays-recipe-section text-center py-5 text-black" data-aos="fade-up">
+            <div class="container">
+                <div class="text-bg-light py-5 mb-4">
+                    <h2 class="text-center mb-5 dark-gold-text">Today's Recipe</h2>
+                    <p class="lead mb-4">Indulge in the art of brewing with a recipe crafted for the finest moments.</p>
+                    <p class="lead">Cappuccino Royale with Morning Glory Blend</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 d-flex flex-column justify-content-evenly p-3 text-bg-light">
+                        <p class="ingredients">
+                            <strong>Ingredients:</strong><br>
+                            - 18g of Morning Glory Blend (freshly ground)<br>
+                            - 180ml of steamed whole milk<br>
+                            - 20ml of vanilla syrup<br>
+                            - A dash of cinnamon for garnish
+                        </p>
+                        <p class="instructions">
+                            <strong>Instructions:</strong><br>
+                            1. Brew a double shot of espresso using the Morning Glory Blend.<br>
+                            2. Steam the milk to create a rich, velvety texture.<br>
+                            3. Pour the espresso into a cup and add the vanilla syrup.<br>
+                            4. Slowly pour the steamed milk over the espresso.<br>
+                            5. Garnish with a sprinkle of cinnamon for a luxurious finish.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <img src="images/cappuccino-in-ceramic-mug.jpg" class="recipe-image shadow"
+                            alt="Cappuccino in ceramic mug">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="d-flex flex-wrap bg-dark justify-content-between align-items-center border-top p-4">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="text-muted">© 2024 Bean Boutique</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="m-2"><a class="text-muted" href="https://x.com/"><i class="fab fa-x-twitter fa-lg"></i></a></li>
+            <li class="m-2"><a class="text-muted" href="https://www.facebook.com/"><i
+                        class="fab fa-facebook-f fa-lg"></i></a></li>
+            <li class="m-2"><a class="text-muted" href="https://www.instagram.com/"><i
+                        class="fab fa-instagram fa-lg"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+    <script>
+        var options = {
+            valueNames: ['name', 'descripton', 'price']
+        };
+
+        var hackerList = new List('product-list', options);
+    </script>
+</body>
+
+</html>

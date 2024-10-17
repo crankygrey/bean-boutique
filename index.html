@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bean Boutique</title>
     <link rel="icon" href="images/favicon.ico" />
-    <script src="https://kit.fontawesome.com/3b49096c20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/custom-bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -34,16 +34,16 @@
                                 </a>
                                 <ul class="dropdown-menu text-center">
                                     <li>
-                                        <a class="dropdown-item" href="#">Signature Blends</a>
+                                        <a class="dropdown-item" href="/signature.html">Signature Blends</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#">Limited Edition</a>
+                                        <a class="dropdown-item" href="/limited_edition.html">Limited Edition</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Brewing Gear</a>
+                                <a class="nav-link" href="/brewing_gear.html">Brewing Gear</a>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
@@ -68,7 +68,7 @@
         </nav>
     </header>
     <main>
-        <section class="carousel-section">
+        <section class="carousel-section" data-aos="fade-down">
             <div id="topCarousel" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -126,7 +126,7 @@
                 </button>
             </div>
         </section>
-        <section class="about-section text-black text-center">
+        <section class="about-section text-black text-center" data-aos="fade-up">
             <div class="d-flex align-items-center justify-content-center flex-column">
                 <p class="about-intro">Because We Love Coffee</p>
                 <h2 class="about-title">About Us</h2>
@@ -142,7 +142,7 @@
                 </p>
             </div>
         </section>
-        <section class="bestseller-section py-5 bg-light">
+        <section class="bestseller-section py-5 bg-light" data-aos="fade-down">
             <div class="container">
                 <h2 class="text-center mb-5 dark-gold-text">
                     Our Bestsellers
@@ -159,7 +159,6 @@
                                     A smooth, bright blend designed to
                                     kickstart your day.
                                 </p>
-                                <a href="/cart" class="buy-now-btn">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -175,7 +174,6 @@
                                     Bright and fruity with floral notes,
                                     sourced from Ethiopia.
                                 </p>
-                                <a href="/cart" class="buy-now-btn">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -190,7 +188,6 @@
                                     Brew perfect coffee effortlessly. Enjoy
                                     rich flavors with customizable settings.
                                 </p>
-                                <a href="/cart" class="buy-now-btn">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -206,7 +203,6 @@
                                     Bright and fruity with floral notes,
                                     sourced from Ethiopia.
                                 </p>
-                                <a href="/cart" class="buy-now-btn">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -221,7 +217,6 @@
                                     Brew perfect coffee effortlessly. Enjoy
                                     rich flavors with customizable settings.
                                 </p>
-                                <a href="/cart" class="buy-now-btn">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -236,14 +231,13 @@
                                     A smooth, bright blend designed to
                                     kickstart your day.
                                 </p>
-                                <a href="/cart" class="buy-now-btn">Buy Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="review-section text-black my-5">
+        <section class="review-section text-black my-5" data-aos="fade-up">
             <div class="text-center">
                 <h3 class="mb-4">Testimonials</h3>
                 <p class="mb-5">Our customers love Bean Boutique! Here's what they have to say.</p>
@@ -320,8 +314,10 @@
             </li>
         </ul>
     </footer>
+    <script src="https://kit.fontawesome.com/3b49096c20.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/app.js"></script>
+    <script type="module" src="js/app.js"></script>
 </body>
 
 </html>

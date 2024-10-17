@@ -4,9 +4,15 @@
 
 $primary: #FFC300;
 $secondary: #FFD60A;
+$dark-gold: #a78d00;
 $body-color: $primary;
 $navbar-light-color: $primary;
 $navbar-light-hover-color: lighten($navbar-light-color, 30%);
 $navbar-light-active-color: $secondary;
+
+$input-color: $dark-gold;
+$input-focus-color: #000000;
+$input-focus-border-color: $dark-gold;
+$input-focus-box-shadow: 0 0 0 0.2rem rgba(248, 228, 149, 0.25);
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
