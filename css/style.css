@@ -1,7 +1,7 @@
 :root {
     --primary: #FFC300;
     --secondary: #FFD60A;
-    --dark-gold: #a78d00;
+    --dark-gold: #715f00;
 }
 
 .dark-gold-text {
@@ -95,6 +95,14 @@ body {
     padding: 1rem;
     border-radius: 10px;
     bottom: unset !important;
+}
+
+.bestseller-section .card:hover {
+    transform: scale(1.1);
+  }
+
+.bestseller-section .card {
+    transition: transform 0.5s;
 }
 
 .hr1, .hr2 {
@@ -306,6 +314,15 @@ body {
     line-height: 2rem;
 }
 
+#product-list .input-group-text {
+    background-color: #502405 !important;
+    color: #ffffff;
+}
+
+#product-list .search {
+    border-color: #502405 !important;
+}
+
 @media (min-width: 768px) {
     .add-to-cart-btn {
         min-width: 120px;
@@ -315,6 +332,11 @@ body {
     .find-us-content {
         box-shadow: unset;
         margin-top: unset;
+    }
+
+    #product-list .input-group {
+        width: 75%;
+        margin: 0 auto;
     }
 }
 
