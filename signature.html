@@ -43,15 +43,15 @@
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">My Cart</a>
+                                <a class="nav-link" href="/my_cart.html">My Cart</a>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Events & Workshops</a>
+                                <a class="nav-link" href="/event_and_workshop.html">Events & Workshops</a>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Offers & Subscriptions</a>
+                                <a class="nav-link" href="/offer_and_subscription.html">Offers & Subscriptions</a>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
@@ -64,7 +64,7 @@
         </nav>
     </header>
     <main>
-        <section class="signature-blends-hero text-center py-5" data-aos="fade-down">
+        <section class="hero signature-blends-hero text-center py-5" data-aos="fade-down">
             <div class="container">
                 <h1 class="display-4 text-white">Discover Our Signature Blends</h1>
                 <p class="lead">Handpicked and Expertly Roasted for the Perfect Brew</p>
@@ -96,7 +96,7 @@
                                     <h5 class="card-title dark-gold-text name">
                                         Morning Glory Blend
                                     </h5>
-                                    <p class="card-text text-black descripton">
+                                    <p class="card-text text-black description">
                                         A smooth, bright blend designed to
                                         kickstart your day.
                                     </p>
@@ -122,7 +122,7 @@
                                     <h5 class="card-title dark-gold-text name">
                                         Espresso Delight
                                     </h5>
-                                    <p class="card-text text-black descripton">
+                                    <p class="card-text text-black description">
                                         A rich and bold blend designed for espresso enthusiasts.
                                     </p>
                                     <p class="price dark-gold-text">$17.49</p>
@@ -146,7 +146,7 @@
                                     <h5 class="card-title dark-gold-text name">
                                         Velvet Roast
                                     </h5>
-                                    <p class="card-text text-black descripton">
+                                    <p class="card-text text-black description">
                                         A smooth and mellow blend that offers comfort in every cup.
                                     </p>
                                     <p class="price dark-gold-text">$14.99</p>
@@ -171,7 +171,7 @@
                                     <h5 class="card-title dark-gold-text name">
                                         Chocolate Cherry Blend
                                     </h5>
-                                    <p class="card-text text-black descripton">
+                                    <p class="card-text text-black description">
                                         A delightful blend combining sweet and tart flavors.
                                     </p>
                                     <p class="price dark-gold-text">$16.99</p>
@@ -196,7 +196,7 @@
                                     <h5 class="card-title dark-gold-text name">
                                         Classic Dark Roast
                                     </h5>
-                                    <p class="card-text text-black descripton">
+                                    <p class="card-text text-black description">
                                         A traditional dark roast blend for those who love bold coffee.
                                     </p>
                                     <p class="price dark-gold-text">$13.49</p>
@@ -222,7 +222,7 @@
                                     <h5 class="card-title dark-gold-text name">
                                         Nutty Hazelnut Blend
                                     </h5>
-                                    <p class="card-text text-black descripton">
+                                    <p class="card-text text-black description">
                                         A flavored blend infused with the essence of hazelnuts.
                                     </p>
                                     <p class="price dark-gold-text">$15.49</p>
@@ -282,12 +282,13 @@
         </ul>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/3b49096c20.js" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="js/app.js"></script>
     <script>
         var options = {
-            valueNames: ['name', 'descripton', 'price']
+            valueNames: ['name', 'description', 'price']
         };
 
         var hackerList = new List('product-list', options);

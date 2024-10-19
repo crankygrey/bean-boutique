@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Boutique</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/custom-bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="images/logo.png" alt="" width="70"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarScroll">
+                    <div class="mx-auto">
+                        <ul class="navbar-nav my-2 my-lg-0 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/">Home</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Our Blends
+                                </a>
+                                <ul class="dropdown-menu text-center">
+                                    <li><a class="dropdown-item" href="/signature.html">Signature Blends</a></li>
+                                    <li><a class="dropdown-item" href="#">Limited Edition</a></li>
+                                </ul>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/brewing_gear.html">Brewing Gear</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/my_cart.html">My Cart</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/event_and_workshop.html">Events & Workshops</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/offer_and_subscription.html">Offers & Subscriptions</a>
+                            </li>
+                            <li class="separator"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/find_us.html">Find Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="event-workshop-section my-5">
+            <div class="container">
+                <div class="row mb-5 align-items-center">
+                    <div class="col-md-6 mb-3">
+                        <img src="images/coffee_tasting_workshop.jpg" alt="Coffee Tasting Workshop"
+                            class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <h3 class="dark-gold-text">Coffee Tasting Workshop</h3>
+                        <p class="text-black">Join us for a coffee tasting experience where you'll explore different
+                            brews and learn how to identify flavor profiles like a professional barista.</p>
+                        <p class="dark-gold-text">Date: November 10, 2024</p>
+                        <p class="dark-gold-text">Time: 2:00 PM - 4:00 PM</p>
+                        <p class="dark-gold-text">Location: Bean Boutique, Main Hall</p>
+                        <p class="dark-gold-text">Price: $49.99</p>
+                        <p class="text-black">In this workshop, you’ll learn:</p>
+                        <ul class="text-black">
+                            <li>How to brew different types of coffee.</li>
+                            <li>Understanding flavor profiles.</li>
+                            <li>How to use various coffee tasting tools.</li>
+                        </ul>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+                <div class="to-right-divider"></div>
+                <div class="row mb-5 align-items-center">
+                    <div class="col-md-6 order-md-2 mb-3">
+                        <img src="images/latte_art_class.jpg" alt="Latte Art Class" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 order-md-1 mb-3">
+                        <h3 class="dark-gold-text">Latte Art Class</h3>
+                        <p class="text-black">Master the art of creating stunning latte art in this hands-on workshop.
+                            You'll get expert tips on frothing milk and pouring designs.</p>
+                        <p class="dark-gold-text">Date: December 1, 2024</p>
+                        <p class="dark-gold-text">Time: 10:00 AM - 1:00 PM</p>
+                        <p class="dark-gold-text">Location: Bean Boutique, Workshop Room</p>
+                        <p class="dark-gold-text">Price: $39.99</p>
+                        <p class="text-black">In this workshop, you’ll learn:</p>
+                        <ul class="text-black">
+                            <li>How to froth milk for latte art.</li>
+                            <li>Basic and advanced pouring techniques.</li>
+                            <li>Tips for achieving perfect consistency.</li>
+                        </ul>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+                <div class="to-left-divider"></div>
+                <div class="row mb-5 align-items-center">
+                    <div class="col-md-6 mb-3">
+                        <img src="images/coffee_brewing_techniques.jpg" alt="Brewing Techniques"
+                            class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <h3 class="dark-gold-text">Mastering Brewing Techniques</h3>
+                        <p class="text-black">Discover various brewing methods, from pour-over to espresso, and learn
+                            how to perfect each technique to enhance your coffee’s flavor.</p>
+                        <p class="dark-gold-text">Date: November 24, 2024</p>
+                        <p class="dark-gold-text">Time: 3:00 PM - 6:00 PM</p>
+                        <p class="dark-gold-text">Location: Bean Boutique, Training Center</p>
+                        <p class="dark-gold-text">Price: $59.99</p>
+                        <p class="text-black">In this workshop, you’ll learn:</p>
+                        <ul class="text-black">
+                            <li>Different brewing methods and their benefits.</li>
+                            <li>How to grind coffee for each method.</li>
+                            <li>Tips for achieving optimal flavor extraction.</li>
+                        </ul>
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#registerModal">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title dark-gold-text" id="registerModalLabel">Registration Form
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-black">
+                        <form>
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-md btn-outline-dark">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="d-flex flex-wrap bg-dark justify-content-between align-items-center border-top p-4">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="text-muted">© 2024 Bean Boutique</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="m-2"><a class="text-muted" href="https://x.com/"><i class="fab fa-x-twitter fa-lg"></i></a></li>
+            <li class="m-2"><a class="text-muted" href="https://www.facebook.com/"><i
+                        class="fab fa-facebook-f fa-lg"></i></a></li>
+            <li class="m-2"><a class="text-muted" href="https://www.instagram.com/"><i
+                        class="fab fa-instagram fa-lg"></i></a></li>
+        </ul>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/3b49096c20.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+
+</html>

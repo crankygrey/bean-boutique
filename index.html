@@ -47,15 +47,15 @@
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">My Cart</a>
+                                <a class="nav-link" href="/my_cart.html">My Cart</a>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Events & Workshops</a>
+                                <a class="nav-link" href="/event_and_workshop.html">Events & Workshops</a>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Offers & Subscriptions</a>
+                                <a class="nav-link" href="/offer_and_subscription.html">Offers & Subscriptions</a>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
@@ -130,7 +130,7 @@
             <div class="d-flex align-items-center justify-content-center flex-column">
                 <p class="about-intro">Because We Love Coffee</p>
                 <h2 class="about-title">About Us</h2>
-                <span class="about-vertical-line"></span>
+                <span class="vertical-line"></span>
                 <p class="about-text">
                     At Bean Boutique, we curate premium coffee beans and
                     offer top-tier coffee machines to deliver an exceptional
@@ -178,8 +178,39 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 blend-card">
+                            <div class="card-img-container">
+                                <img src="images/winter_spice_blend.png" class="card-img-top"
+                                    alt="Winter Spice Blend" />
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title dark-gold-text name">Winter Spice Blend</h5>
+                                <p class="card-text text-black description">
+                                    A cozy blend infused with warm winter spices, perfect for savoring while curled
+                                    up by the fire on a snowy day.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100 blend-card">
+                            <div class="card-img-container">
+                                <img src="images/espresso_machine.jpg" class="card-img-top"
+                                    alt="Compact Espresso Machine" />
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title dark-gold-text name">Compact Espresso Machine</h5>
+                                <p class="card-text text-black">
+                                    A space-saving espresso machine with customizable brew settings and easy-to-use
+                                    interface for espresso lovers.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
                         <div class="card h-100">
-                            <img src="images/drip_coffee_maker.png" class="card-img-top" alt="Drip Coffee Maker" />
+                            <img src="images/precision_drip.jpg" class="card-img-top"
+                                alt="Precision Drip Coffee Maker" />
                             <div class="card-body text-center">
                                 <h5 class="card-title dark-gold-text">
                                     Precision Drip Coffee Maker
@@ -192,44 +223,15 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="images/single_origin_ethiopian.png" class="card-img-top"
-                                alt="Single Origin Ethiopian" />
-                            <div class="card-body text-center">
-                                <h5 class="card-title dark-gold-text">
-                                    Single Origin Ethiopian
-                                </h5>
-                                <p class="card-text text-black">
-                                    Bright and fruity with floral notes,
-                                    sourced from Ethiopia.
-                                </p>
+                        <div class="card h-100 blend-card">
+                            <div class="card-img-container">
+                                <img src="images/coffee_center.jpg" class="card-img-top" alt="Coffee Center Machine" />
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="images/drip_coffee_maker.png" class="card-img-top" alt="Drip Coffee Maker" />
                             <div class="card-body text-center">
-                                <h5 class="card-title dark-gold-text">
-                                    Precision Drip Coffee Maker
-                                </h5>
+                                <h5 class="card-title dark-gold-text name">Coffee Center Machine</h5>
                                 <p class="card-text text-black">
-                                    Brew perfect coffee effortlessly. Enjoy
-                                    rich flavors with customizable settings.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100">
-                            <img src="images/morning_glory.png" class="card-img-top" alt="Morning Glory Blend" />
-                            <div class="card-body text-center">
-                                <h5 class="card-title dark-gold-text">
-                                    Morning Glory Blend
-                                </h5>
-                                <p class="card-text text-black">
-                                    A smooth, bright blend designed to
-                                    kickstart your day.
+                                    A versatile machine that brews both ground coffee and single-serve pods. Ideal
+                                    for any coffee lover.
                                 </p>
                             </div>
                         </div>
@@ -296,7 +298,26 @@
                 </div>
             </div>
         </section>
-
+        <div class="modal fade" id="discountModal" tabindex="-1" aria-labelledby="discountModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title dark-gold-text" id="discountModalLabel">Welcome to Bean Boutique!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-black">
+                        <p>As a first-time visitor, get a <strong>15% discount</strong> on your first purchase!</p>
+                        <p>Enter your email to claim the offer:</p>
+                        <input type="email" id="email-input" class="form-control" placeholder="Your Email" />
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" id="signup-btn" class="btn btn-primary">Sign Up & Get Discount</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="d-flex flex-wrap bg-dark justify-content-between align-items-center border-top p-4">
         <div class="col-md-4 d-flex align-items-center">
@@ -318,6 +339,31 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="js/app.js"></script>
+    <script>
+        function checkFirstVisit() {
+            if (!localStorage.getItem('firstVisit')) {
+                var discountModal = new bootstrap.Modal(document.getElementById('discountModal'));
+                discountModal.show();
+            }
+        }
+
+        document.getElementById('signup-btn').addEventListener('click', function () {
+            var email = document.getElementById('email-input').value;
+            if (email) {
+                alert('Thank you for signing up! Your discount code is: BBF001');
+                var discountModal = bootstrap.Modal.getInstance(document.getElementById('discountModal'));
+                discountModal.hide();
+            } else {
+                alert('Please enter a valid email.');
+            }
+        });
+
+        document.getElementById('discountModal').addEventListener('hidden.bs.modal', function () {
+            localStorage.setItem('firstVisit', 'true');
+        });
+
+        window.onload = checkFirstVisit;
+    </script>
 </body>
 
 </html>

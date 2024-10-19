@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bean Boutique</title>
     <link rel="icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/custom-bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -35,7 +34,7 @@
                                 </a>
                                 <ul class="dropdown-menu text-center">
                                     <li><a class="dropdown-item" href="/signature.html">Signature Blends</a></li>
-                                    <li><a class="dropdown-item" href="/limited_edition.html">Limited Edition</a></li>
+                                    <li><a class="dropdown-item" href="#">Limited Edition</a></li>
                                 </ul>
                             </li>
                             <li class="separator"></li>
@@ -44,7 +43,7 @@
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/my_cart.html">My Cart</a>
+                                <a class="nav-link active" href="/my_cart.html">My Cart</a>
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
@@ -56,7 +55,7 @@
                             </li>
                             <li class="separator"></li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Find Us</a>
+                                <a class="nav-link" href="/find_us.html">Find Us</a>
                             </li>
                         </ul>
                     </div>
@@ -65,26 +64,65 @@
         </nav>
     </header>
     <main>
-        <section class="find-us-section m-5 text-black" data-aos="fade-up">
+        <section class="my-cart-section my-5" data-aos="fade-up">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="images/find_us.jpg" class="img-fluid" alt="Shop Interior">
+                <h1 class="text-center mb-5 dark-gold-text">My Cart</h1>
+                <div class="row my-4">
+                    <div class="col-lg-8 col-md-7">
+                        <div class="cart-item mb-4 bg-white shadow rounded p-3">
+                            <div class="row">
+                                <div class="col-md-4 d-flex justify-content-center">
+                                    <img src="images/morning_glory.png" alt="Morning Glory Blend">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="dark-gold-text">Morning Glory Blend</h5>
+                                    <p class="text-black">Price: $15.99</p>
+                                    <p class="text-black">Quantity: 1</p>
+                                    <button class="btn btn-md btn-outline-dark">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item mb-4 bg-white shadow rounded p-3">
+                            <div class="row">
+                                <div class="col-md-4 d-flex justify-content-center">
+                                    <img src="images/midnight_roast.png" alt="Midnight Roast Glory Blend">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="dark-gold-text">Midnight Roast</h5>
+                                    <p class="text-black">Price: $22.99</p>
+                                    <p class="text-black">Quantity: 1</p>
+                                    <button class="btn btn-md btn-outline-dark">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item mb-4 bg-white shadow rounded p-3">
+                            <div class="row">
+                                <div class="col-md-4 d-flex justify-content-center">
+                                    <img src="images/barista_pro.jpg" alt="Barista Pro Espresso Machine"
+                                        class="img-fluid cart-img">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5 class="dark-gold-text">Barista Pro Espresso Machine</h5>
+                                    <p class="text-black">Price: $799.99</p>
+                                    <p class="text-black">Quantity: 1</p>
+                                    <button class="btn btn-md btn-outline-dark">Remove</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="find-us-content">
-                            <h1>Find Us</h1>
-                            <h4>Where</h4>
-                            <p>123 Coffee Lane,<br>Bean City, BC 12345</p>
-                            <h4>When</h4>
-                            <p>Mon - Fri: 8 AM - 6 PM<br>Sat - Sun: 9 AM - 5 PM</p>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title dark-gold-text">Order Summary</h5>
+                                <p class="text-black">Subtotal: $815.98</p>
+                                <p class="text-black">Shipping: Free</p>
+                                <h5 class="dark-gold-text">Total: $815.98</h5>
+                                <a href="#" class="btn btn-dark w-100">Proceed to Checkout</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section data-aos="fade-down">
-            <div id="map" class="container mb-4"></div>
         </section>
     </main>
     <footer class="d-flex flex-wrap bg-dark justify-content-between align-items-center border-top p-4">
@@ -100,10 +138,8 @@
         </ul>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/3b49096c20.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/openlayers@4.6.5/dist/ol.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/map.js"></script>
     <script type="module" src="js/app.js"></script>
 </body>
 
