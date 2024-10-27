@@ -6,6 +6,7 @@ npm-debug.log
 css/*.css
 css/*.css.map
 !css/style.css
+!css/custom-bootstrap.min.css
 
 # OS generated files
 .DS_Store
