@@ -17,6 +17,10 @@ body {
     background-color: #000000;
 }
 
+.navbar-nav {
+    font-size: 1.1rem;
+}
+
 .nav-link {
     position: relative;
 }
@@ -97,11 +101,11 @@ body {
     bottom: unset !important;
 }
 
-.bestseller-section .card:hover {
+.bestseller-section .card:hover, #cartModal .list-group-item:hover, footer li:hover, .review-section img:hover {
     transform: scale(1.1);
   }
 
-.bestseller-section .card {
+.bestseller-section .card, #cartModal .list-group-item, footer li, .review-section img {
     transition: transform 0.5s;
 }
 
@@ -121,7 +125,7 @@ body {
 
 .about-intro {
     color: rgb(201, 174, 91);
-    font-size: .8rem;
+    font-size: .9rem;
     letter-spacing: 2px;
     line-height: 1.75rem;
     text-transform: uppercase;
@@ -129,6 +133,7 @@ body {
 
 .about-text, .about-cta {
     padding: 10px 20px;
+    font-size: 1.1rem;
 }
 
 .vertical-line {
@@ -140,7 +145,7 @@ body {
 }
 
 .card-img-top {
-    height: 200px;
+    height: 150px;
     object-fit: contain;
 }
 
@@ -273,7 +278,7 @@ body {
 }
 
 .recipe-image {
-    width: clamp(300px, 100%, 500px);
+    width: clamp(200px, 100%, 500px);
     height: auto;
     margin: auto;
 }
@@ -323,6 +328,26 @@ body {
     border-color: #502405 !important;
 }
 
+#cart-btn {
+    position: relative;
+    border-radius: 50%;
+    border-width: 2px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: rgb(218, 87, 87);
+    color: white;
+    border-radius: 50%;
+    padding: 3px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    display: none;
+}
+
+
 @media (min-width: 768px) {
     .add-to-cart-btn {
         min-width: 120px;
@@ -370,6 +395,6 @@ body {
     }
 
     .card-img-top {
-        height: 350px;
+        height: 280px;
     }
 }
